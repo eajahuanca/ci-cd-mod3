@@ -1,0 +1,19 @@
+name: CI/CD-MOD3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy a servidor de prueba
+      run: |
+        mkdir -p /var/www/html
+        cp index.html /var/www/html

@@ -1,0 +1,3 @@
+## CI/CD
+
+El archivo main.yml ubicado en `.github/workflows/main.yml`, de flujo de trabajo define un trabajo llamado `build` que se ejecutará en una máquina virtual de Ubuntu cuando se realicen cambios en la rama "main" del repositorio. El trabajo simplemente copiará el archivo `index.html` en la carpeta `/var/www/html` en la máquina virtual, lo que simula un despliegue en un servidor web de prueba.
