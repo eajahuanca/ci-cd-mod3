@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Deploy a servidor de prueba
-      run: |
-        mkdir -p /var/www/html
-        cp index.html /var/www/html
+      - name: Deploy a servidor de prueba
+        run: |
+          mkdir -p /var/www/html
+          cp index.html /var/www/html
