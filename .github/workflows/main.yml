@@ -16,4 +16,4 @@ jobs:
       - name: Deploy a servidor de prueba
         run: |
           mkdir -p /var/www/html
-          cp index.html /var/www/html
+          sudo cp index.html /var/www/html
